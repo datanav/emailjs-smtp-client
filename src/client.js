@@ -843,7 +843,7 @@ class SmtpClient {
       }
 
       this._currentAction = this._actionIdle
-      this.ondone(!!command.success)
+      this.ondone(!!command.success, command)
     }
 
     // If the client wanted to do something else (eg. to quit), do not force idle
